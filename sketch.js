@@ -47,9 +47,7 @@ function draw() {
   fill("white");
   textFont("Ravie")
   text("Score : "+score,20,40);
-  textFont("Segoe")
-  textSize(15)
-text("PRESS (SPACE) KEY TO SERVE", 150,250)
+  
 textFont("Segoe Script")
  textSize(20)
   text("CHANCE = "+chance,260,50)
@@ -156,14 +154,14 @@ text("TOTAL SCORE = "+score,150,250)
 }
 
 
-function keyPressed()
+function mousePressed()
 {
- if(keyCode === 32||(touches.length > 1)) {
+
     
-  particle=new Particle(random(5,495),10, 10); 
+  particle=new Particle(mouseX,10, 10); 
   
 
- }
+ 
   
     
 }
